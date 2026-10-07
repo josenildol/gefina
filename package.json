@@ -4,6 +4,9 @@
     "version": "0.0.0",
     "author": "Josenildo Soares",
     "type": "module",
+    "scripts": {
+        "dev": "node --watch ./server.js"
+    },
     "dependencies": {
         "express": "^5.2.1"
     }
