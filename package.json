@@ -5,9 +5,14 @@
     "author": "Josenildo Soares",
     "type": "module",
     "scripts": {
-        "dev": "node --watch ./server.js"
+        "dev": "node --watch ./server.js",
+        "check":"tsc"
     },
     "dependencies": {
         "express": "^5.2.1"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "typescript": "^7.0.2"
     }
 }

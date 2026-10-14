@@ -1,7 +1,6 @@
 import express from 'express';
 
 
-
 const invoices = [{
   id: 1,  
   amount: 125039,
