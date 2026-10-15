@@ -5,7 +5,7 @@
     "author": "Josenildo Soares",
     "type": "module",
     "scripts": {
-        "dev": "node --watch ./server.js",
+        "dev": "node --watch ./server.ts",
         "check":"tsc"
     },
     "dependencies": {
