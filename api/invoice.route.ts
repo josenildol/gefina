@@ -1,25 +1,28 @@
-import  {Router} from 'express';
+import { Router } from 'express';
 import { findAllInvoices, findInvoicesById } from './invoice.services.ts';
 
 const router = Router();
 
-router.get('/api/invoices', (request, response) => {
-    const invoices = findAllInvoices();
+router.get('/api/invoices', (_request, response) => {
+  const invoices = findAllInvoices();
 
-    response.status(200).json(invoices);
+  response.status(200).json(invoices);
 });
 
 router.get('/api/invoices/:id', (request, response) => {
-    const id = Number(request.params.id);
-    
-    const invoice = findInvoicesById(id);
+  const id = Number(request.params.id);
 
-    if (!invoice) response.status(404).json({ error: {
+  const invoice = findInvoicesById(id);
+
+  if (!invoice)
+    response.status(404).json({
+      error: {
         status: 404,
         message: 'Invoice not found.'
-    }});
-   
-    response.status(200).json(invoice);
-})
+      }
+    });
+
+  response.status(200).json(invoice);
+});
 
 export default router;

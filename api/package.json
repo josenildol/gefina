@@ -1,19 +1,15 @@
 {
-    "name": "gefina",
-    "description": "Sistema de gestão de contas a receber",
-    "version": "0.0.0",
-    "author": "Josenildo Soares",
-    "type": "module",
-    "scripts": {
-        "dev": "node --watch ./server.ts",
-        "check": "tsc"
-    },
-    "dependencies": {
-        "express": "^5.2.1",
-        "i": "^0.3.7"
-    },
-    "devDependencies": {
-        "@types/express": "^5.0.6",
-        "typescript": "^7.0.2"
-    }
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch ./server.ts",
+    "check": "tsc"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "i": "^0.3.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "typescript": "^7.0.2"
+  }
 }
