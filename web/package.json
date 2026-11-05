@@ -1,5 +1,9 @@
 {
     "type": "module",
+    "scripts": {
+        "dev" : "vite",
+        "check": "tsc"
+    },
     "dependencies": {
         "react": "^19.3.1",
         "react-dom": "^19.3.1"
