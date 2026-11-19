@@ -8,7 +8,10 @@ const router = Router();
 router.get('/', (_request, response) => {
   const invoices = findAllInvoices();
 
-  response.status(200).json(invoices);
+ // setTimeout(() => {
+   response.status(200).json(invoices); 
+ // }, 3000);
+  
 });
 
 router.get('/:id', (request, response) => {
