@@ -28,6 +28,6 @@ app.use((_request, response) => {
   });
 });
 
-process.loadEnvFile('./.env');
+//process.loadEnvFile('./.env');
 
 app.listen(Number(process.env.PORT));
